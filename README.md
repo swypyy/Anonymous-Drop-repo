@@ -1,50 +1,53 @@
-# Anonymous Blogger
+# Anonymous Drop
 
-A small anonymous blogging project with a web page and a Node.js/Express API for posts and comments.
+A simple anonymous blogging and discussion app built with Node.js and Express.
 
-🌐 **Web page:** [Open the blog](https://swypyy.github.io/blog.html)
+🌐 Web page: [Open the blog](https://swypyy.github.io/blog.html)
+
+## Overview
+
+Anonymous Drop is a lightweight project for sharing anonymous posts and comments. It stores data in local JSON files and provides a simple backend API for creating and reading content.
 
 ## Features
 
-- Create and view anonymous posts
-- Add and read comments
-- Store posts and comments in local JSON files
+- Create anonymous posts
+- Read posts and comments
+- Add comments to existing posts
+- Local data storage using JSON files
 - Simple Express API
+- Beginner-friendly project structure
 
-## Built with
+## Tech stack
 
 - JavaScript
 - Node.js
 - Express
+- JSON for local persistence
 
 ## Run locally
 
-1. Install [Node.js](https://nodejs.org/).
-2. Clone this repository and open its folder:
+```bash
+git clone https://github.com/swypyy/Anonymous-Drop-repo.git
+cd Anonymous-Drop-repo
+npm install
+npm start
+```
 
-   ```bash
-   git clone https://github.com/swypyy/Anonymous-Blogger-repo.git
-   cd Anonymous-Blogger-repo
-   ```
+The app runs on port `3000` by default.
 
-3. Install dependencies and start the server:
+## API endpoints
 
-   ```bash
-   npm install
-   npm start
-   ```
-
-The server uses port `3000` by default.
-
-## API
-
-| Method | Endpoint | Purpose |
+| Method | Endpoint | Description |
 | --- | --- | --- |
-| `GET` | `/api/posts` | Get posts |
-| `POST` | `/api/posts` | Create a post |
-| `GET` | `/api/comments/:postId` | Get comments for a post |
+| `GET` | `/api/posts` | Fetch all posts |
+| `POST` | `/api/posts` | Create a new post |
+| `GET` | `/api/comments/:postId` | Fetch comments for a post |
 | `POST` | `/api/comments/:postId` | Add a comment |
+
+## Project purpose
+
+This repository is meant to help practice backend development, API design, JSON storage, and front-end integration in a small but complete app.
 
 ## License
 
-See [LICENSE](LICENSE) for usage terms.
+See [LICENSE](LICENSE) for more information.
